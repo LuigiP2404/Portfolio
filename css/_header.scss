@@ -1,0 +1,135 @@
+@import "variables";
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  padding: 30px 0;
+  transition: all 0.3s ease;
+
+
+  .max-width {
+
+    .menu {
+
+      li {
+        display: inline-block;
+        a {
+          color: $bianco;
+          font-size: 18px;
+          font-weight: 500;
+          margin-left: 25px;
+          transition: color 0.3s ease;
+        }
+        a:hover {
+          color: $rosso;
+        }
+      }
+      .img-mobile {
+        display: none;
+      }
+    }
+
+    .menu-btn {
+      color: $bianco;
+      font-size: 23px;
+      cursor: pointer;
+      display: none;
+    }
+  }
+  &.scrolled {
+    padding: 15px 0;
+    background-color: $rosso;
+  }
+}
+
+
+@media screen and (min-width: 948px) {
+  .navbar {
+
+    &.scrolled {
+      .max-width{
+        .menu{
+          li{
+            a:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 947px) {
+
+  .navbar {
+    .max-width {
+      padding: 0 50px;
+
+      .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+
+        li {
+          display: block;
+
+          a {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+          }
+        }
+
+        .img-mobile {
+          display: inline-block;
+          max-width: 150px;
+          margin-top: 50px;
+        }
+      }
+
+      .menu-btn {
+        display: block;
+        z-index: 2;
+
+        .hambclicked:before {
+          content: '\f00d';
+        }
+      }
+    }
+
+    a:hover{
+      color: $rosso;
+    }
+
+    .menu.clicked {
+      left: 0;
+    }
+  }
+}
+
+@media all and (max-width: 950px) and (orientation: landscape) {
+
+  .menu {
+    padding-top: 0 !important;
+  }
+
+  .img-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .max-width {
+    padding: 0 80px;
+  }
+}

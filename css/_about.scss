@@ -1,0 +1,140 @@
+@import "variables";
+
+.about {
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+
+  .max-width {
+
+    .title {
+      font-family: "Ubuntu", sans-serif;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 60px;
+      padding-bottom: 20px;
+    }
+
+    .about-container {
+
+      .about-content {
+        .about-title-container {
+          width: 100%;
+
+          .about-title-1 {
+            text-align: center;
+            font-size: 26px;
+            text-wrap: nowrap;
+            margin-right: 7.5px;
+          }
+
+          .about-title-2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 26px;
+            text-wrap: nowrap;
+            margin-left: 7.5px;
+            color: $rosso;
+          }
+        }
+      }
+
+      .about-text {
+        text-justify: justify;
+        font-size: 16px;
+      }
+
+    }
+
+        .cvd {
+          width: 250px;
+          height: 75px;
+          display: block;
+          margin: 50px auto 0 auto;
+          border-radius: 5px;
+          padding: 20px 0 0 65px;
+          font-size: 23px;
+          color: $bianco;
+          background: $rosso;
+          transition: all 0.3s ease;
+        }
+
+        .cvd:hover {
+          background: $bianco;
+          border: 1.5px solid $rosso;
+          color: $rosso;
+          transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (min-width: 991px) {
+  .about {
+    .max-width {
+      .about-container {
+          .about-title-1 {
+            display: inline-block;
+           }
+          .about-title-2 {
+            display: inline-block;
+           }
+          .about-text {
+            max-width: 700px;
+          }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about {
+    .max-width {
+      .about-container {
+         .about-title-1 {
+           display: inline-block;
+          }
+         .about-title-2 {
+           display: inline-block;
+          }
+          .about-text {
+            max-width: 500px;
+          }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about {
+    .max-width {
+      padding: 0;
+      margin: 0 10px 0 10px;
+      .about-container {
+        .about-content {
+
+          .about-title-container {
+            display: block;
+            .about-title-1 {
+              display: block;
+              margin-right: 0;
+            }
+            .about-title-2 {
+              display: block;
+              margin-left: 0;
+            }
+          }
+          .about-text {
+            max-width: 300px;
+          }
+        }
+      }
+      .cvd {
+          width: 175px;
+          height: 50px;
+          padding: 0;
+          font-size: 20px;
+          padding: 10px 0 0 35px;
+      }
+    }
+  }
+}

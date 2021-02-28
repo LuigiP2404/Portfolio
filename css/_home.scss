@@ -1,0 +1,157 @@
+@import "variables";
+
+.home {
+  height: 100vh;
+  background: {
+    image: url(../img/sfondo.jpg);
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    attachment: fixed;
+  }
+  color: $bianco;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+
+  .max-width {
+    margin: auto 0 auto 30px;
+
+    .home-content {
+
+      .text-1 {
+        font-size: 27px;
+      }
+      .text-2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+        white-space: nowrap;
+      }
+
+      .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+        white-space: nowrap;
+
+        span {
+          color: $rosso;
+          font-weight: 500;
+        }
+        }
+      }
+    }
+}
+
+@keyframes nome {
+
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: scale(1.10);
+    color: $rosso;
+  }
+
+  66% {
+    color: $rosso;
+  }
+
+  75% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+@media screen and (min-width: 1105px) {
+
+  .text-2:hover {
+
+    cursor: pointer;
+    animation: {
+      name: nome;
+      duration: 1s;
+      fill-mode: forwards;
+      timing-function: ease;
+      delay: 0.1s;
+    }
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  .home {
+
+    .max-width {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+
+    .max-width {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 947px) {
+  .home {
+    .max-width {
+
+      .home-content {
+
+        .text-2 {
+          font-size: 60px;
+        }
+        .text-3 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .home {
+    .max-width {
+      padding: 0 23px;
+
+      .home-content {
+
+        .text-1 {
+          font-size: 23px;
+        }
+        .text-2 {
+          font-size: 45px;
+        }
+        .text-3 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home {
+    .max-width {
+      padding: 0 23px;
+
+      .home-content {
+        .text-2 {
+          font-size: 38px;
+        }
+        .text-3 {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}

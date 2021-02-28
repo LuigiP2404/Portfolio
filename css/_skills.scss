@@ -1,0 +1,114 @@
+@import "variables";
+
+.skills {
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+  background: #111;
+  color: $bianco;
+
+  .max-width {
+
+    .title {
+      width: 100%;
+      font-family: "Ubuntu", sans-serif;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 60px;
+      padding-bottom: 20px;
+    }
+
+    .skills-content {
+      flex-wrap: wrap;
+      margin: 100px 0 50px 0;
+    }
+
+    .card {
+      width: calc(50% - 20px);
+      background: #222;
+      text-align: center;
+      border-radius: 6px;
+      padding: 20px 25px;
+      cursor: pointer;
+
+      .box {
+
+        i {
+          font-size: 50px;
+          color: $rosso;
+          transition: color 0.3s ease;
+        }
+
+        .text {
+          font-size: 25px;
+          font-weight: 500;
+          margin: 10px 0 7px 0;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 15px;
+        }
+      }
+
+      &:hover .box {
+        animation: {
+          name: skills;
+          duration: 0.5s;
+          timing-function: ease;
+          fill-mode: forwards;
+        }
+      }
+
+      @keyframes skills {
+        0% {
+          transform: scale(0.95);
+        }
+
+        50% {
+          transform: scale(1.10);
+        }
+
+        100% {
+          transform: scale(1.05);
+        }
+      }
+
+      &:hover {
+        background: $rosso;
+      }
+
+      &:hover i {
+        color: $bianco;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 947px) {
+  .skills {
+    .max-width {
+      .skills-content {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 690px) {
+  .skills {
+    .max-width {
+      padding: 0;
+      margin: 0 10px 0 10px;
+
+      .skills-content {
+        margin: 0;
+
+        .card {
+          margin-top: 40px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
