@@ -1,0 +1,12 @@
+.footer-copyright {
+  color: rgb(200, 200, 200);
+  font-size: 16px;
+  margin-bottom: 75px;
+}
+@media all and (max-width: 480px) {
+  .footer-copyright {
+    font-size: 4vw;
+    padding-inline: 25px;
+    line-height: 1.6;
+  }
+}/*# sourceMappingURL=FooterCopyright.css.map */

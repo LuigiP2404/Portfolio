@@ -1,0 +1,56 @@
+.footermenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vh;
+}
+@media all and (max-width: 768px) {
+  .footermenu {
+    height: auto;
+    margin-block: 30px 50px;
+  }
+}
+.footermenu-menu {
+  display: flex;
+  gap: 40px;
+}
+@media all and (max-width: 768px) {
+  .footermenu-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+  }
+}
+@media all and (max-width: 680px) {
+  .footermenu-menu {
+    padding-inline: 20px;
+  }
+}
+@media all and (max-width: 480px) {
+  .footermenu-menu {
+    padding-inline: 15px;
+  }
+}
+.footermenu-menu a {
+  font-size: 28px;
+  color: #fff;
+  transition: all 300ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media all and (max-width: 680px) {
+  .footermenu-menu a {
+    font-size: 5.5vw;
+  }
+}
+@media all and (max-width: 480px) {
+  .footermenu-menu a {
+    font-size: 6vw;
+  }
+}
+.footermenu-menu a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}/*# sourceMappingURL=FooterMenu.css.map */

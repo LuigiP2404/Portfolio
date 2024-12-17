@@ -1,0 +1,34 @@
+html, body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: 1px;
+  scrollbar-color: #fff;
+  overflow-x: hidden;
+  background: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media all and (max-width: 991px) {
+  html, body {
+    background-position: top;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section-intro-text {
+  color: rgb(200, 200, 200);
+}
+
+.section-title {
+  font-size: 48px;
+  margin-block: 12px;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

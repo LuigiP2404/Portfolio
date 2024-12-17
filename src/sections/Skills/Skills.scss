@@ -1,0 +1,88 @@
+@import "../../style/variables";
+
+.skills {
+    min-height: 100vh;
+
+    &-paragraph {
+        color: $lightgray;
+        font-size: 20px;
+        font-style: italic;
+        max-width: 900px;
+        width: 80%;
+        margin-top: 50px;
+        margin-inline: auto;
+
+        @media all and (max-width: 768px) {
+            font-size: 17px;
+            padding-inline: 25px;
+            width: 100%;
+        }
+    }
+
+    &-box-container {
+        height: 80%;
+    }
+
+    &-box {
+        border: 1px solid $white;
+        max-width: 700px;
+        width: 90%;
+        margin-inline: auto;
+        border-radius: $borderRadius;
+        background: $black;
+        margin-top: 50px;
+        padding: 50px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media all and (max-width: 768px) {
+            padding: 50px 25px;
+        }
+
+        &-section {
+            &-title {
+                color: $white;
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+
+                @media all and (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+
+            &-languages {
+                display: flex;
+                gap: 30px;
+                margin-top: 30px;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                &-item {
+                    color: $white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 70px;
+                    gap: 10px;
+
+                    @media all and (max-width: 768px) {
+                        font-size: 50px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: $lightgray;
+
+                        @media all and (max-width: 768px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

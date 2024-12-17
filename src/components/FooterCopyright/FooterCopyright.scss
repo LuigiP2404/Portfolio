@@ -1,0 +1,13 @@
+@import "../../style/variables";
+
+.footer-copyright {
+    color: $lightgray;
+    font-size: 16px;
+    margin-bottom: 75px;
+
+    @media all and (max-width: 480px) {
+        font-size: 4vw;
+        padding-inline: 25px;
+        line-height: 1.6;
+    }
+}

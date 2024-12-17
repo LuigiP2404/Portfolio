@@ -1,0 +1,81 @@
+.skills {
+  min-height: 100vh;
+}
+.skills-paragraph {
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+  font-style: italic;
+  max-width: 900px;
+  width: 80%;
+  margin-top: 50px;
+  margin-inline: auto;
+}
+@media all and (max-width: 768px) {
+  .skills-paragraph {
+    font-size: 17px;
+    padding-inline: 25px;
+    width: 100%;
+  }
+}
+.skills-box-container {
+  height: 80%;
+}
+.skills-box {
+  border: 1px solid #fff;
+  max-width: 700px;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 24px;
+  background: #000;
+  margin-top: 50px;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media all and (max-width: 768px) {
+  .skills-box {
+    padding: 50px 25px;
+  }
+}
+.skills-box-section-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+@media all and (max-width: 768px) {
+  .skills-box-section-title {
+    font-size: 24px;
+  }
+}
+.skills-box-section-languages {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-box-section-languages-item {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 70px;
+  gap: 10px;
+}
+@media all and (max-width: 768px) {
+  .skills-box-section-languages-item {
+    font-size: 50px;
+  }
+}
+.skills-box-section-languages-item span {
+  font-size: 16px;
+  color: rgb(200, 200, 200);
+}
+@media all and (max-width: 768px) {
+  .skills-box-section-languages-item span {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Skills.css.map */

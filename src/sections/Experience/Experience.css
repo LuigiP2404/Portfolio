@@ -1,0 +1,255 @@
+.experience {
+  height: 100vh;
+}
+@media all and (max-width: 1400px) {
+  .experience {
+    height: auto;
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+}
+@media all and (max-width: 768px) {
+  .experience {
+    margin-bottom: 125px;
+  }
+}
+.experience-cards-container {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+  max-width: 1600px;
+  margin-inline: auto;
+}
+.experience-cards-container .mobile {
+  display: none;
+}
+@media all and (max-width: 1400px) {
+  .experience-cards-container {
+    flex-direction: column;
+    margin-top: 75px;
+  }
+  .experience-cards-container .desktop {
+    display: none;
+  }
+  .experience-cards-container .mobile {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .experience-cards-container {
+    width: 90%;
+  }
+}
+.experience-cards-container .experience-card-empty-button {
+  background: #fff;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 25px 75px;
+  border-radius: 24px;
+  transition: 0.5s all;
+  align-self: flex-start;
+  margin-top: 75px;
+}
+@media all and (max-width: 1400px) {
+  .experience-cards-container .experience-card-empty-button {
+    align-self: center;
+  }
+}
+.experience-cards-container .experience-card-empty-button:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.2);
+}
+@media all and (max-width: 480px) {
+  .experience-card-container {
+    width: 95%;
+  }
+}
+.experience-card.container {
+  max-width: 450px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 48px;
+  min-height: 500px;
+  min-width: 400px;
+  display: flex;
+  perspective: 1000px;
+  position: relative;
+  transition: 0.6s ease-out;
+  transform-style: preserve-3d;
+}
+.experience-card.container.flipped {
+  transform: perspective(300px) rotateY(180deg);
+}
+@media all and (max-width: 480px) {
+  .experience-card.container {
+    min-width: 300px;
+  }
+}
+.experience-card.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #000;
+  border-radius: 48px;
+  backface-visibility: hidden;
+  padding: 50px 35px;
+}
+.experience-card.front .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.experience-card.front .experience-card-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.experience-card.front .experience-card-duration {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(200, 200, 200);
+  margin-bottom: 15px;
+}
+.experience-card.front .experience-card-company {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.experience-card.front .experience-card-description {
+  font-size: 16px;
+  flex: 1;
+}
+.experience-card.front .experience-card-description a {
+  color: #fff;
+}
+.experience-card.front .experience-card-button {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 0px 35px 0px 45px;
+  margin-top: 25px;
+  color: #fff;
+  display: flex;
+  background: #000;
+  justify-self: center;
+  align-items: center;
+  cursor: pointer;
+  align-self: center;
+  transition: 0.3s all;
+  font-size: 18px;
+}
+.experience-card.front .experience-card-button span {
+  color: #fff;
+  font-size: 32px;
+  padding-top: 7px;
+}
+.experience-card.front .experience-card-button:hover {
+  color: #000;
+  background: #fff;
+}
+.experience-card.front .experience-card-button:hover span {
+  color: #000;
+}
+.experience-card.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+  transform: rotateY(180deg);
+  padding: 50px 35px;
+}
+.experience-card.back .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.experience-card.back .experience-card-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.experience-card.back .experience-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+}
+.experience-card.back .experience-card-skills div {
+  width: 33%;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 10px;
+}
+.experience-card.back .experience-card-skills div span {
+  font-size: 13px;
+  margin-top: 10px;
+  font-style: italic;
+  color: rgb(200, 200, 200);
+}
+.experience-card.back .experience-card-button {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  padding: 0px 45px 0px 35px;
+  margin-top: 25px;
+  color: #fff;
+  display: flex;
+  background: #000;
+  justify-self: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all;
+  align-self: center;
+  font-size: 18px;
+}
+.experience-card.back .experience-card-button span {
+  color: #fff;
+  font-size: 32px;
+  padding-top: 7px;
+}
+.experience-card.back .experience-card-button:hover {
+  color: #000;
+  background: #fff;
+}
+.experience-card.back .experience-card-button:hover span {
+  color: #000;
+}
+.experience .arrow-right {
+  margin-inline: 20px;
+  color: #fff;
+  font-size: 50px;
+}
+.experience .arrow-right a {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}/*# sourceMappingURL=Experience.css.map */
