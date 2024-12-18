@@ -92,19 +92,19 @@ function Header() {
                 <a className="header-menu-mobile-container-close" onClick={() => toggleMobileMenu()}>
                     <RxCross2 />
                 </a>
-                <a className="header-menu-mobile-item" href="#about">
+                <a className="header-menu-mobile-item" href="#about" onClick={() => toggleMobileMenu()}>
                     {t('About')}
                 </a>
-                <a className="header-menu-mobile-item" href="#experience">
+                <a className="header-menu-mobile-item" href="#experience" onClick={() => toggleMobileMenu()}>
                     {t('Experience')}
                 </a>
-                <a className="header-menu-mobile-item" href="#skills">
+                <a className="header-menu-mobile-item" href="#skills" onClick={() => toggleMobileMenu()}>
                     {t('Skills')}
                 </a>
-                <a className="header-menu-mobile-item" href="#projects">
+                <a className="header-menu-mobile-item" href="#projects" onClick={() => toggleMobileMenu()}>
                     {t('Projects')}
                 </a>
-                <a className="header-menu-mobile-item" href="#contact">
+                <a className="header-menu-mobile-item" href="#contact" onClick={() => toggleMobileMenu()}>
                     {t('Contact')}
                 </a>
                 <a className="header-menu-mobile-item language-selector" onClick={toggleLanguageSelector}>

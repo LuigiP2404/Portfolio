@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.fc04b32d.css",
+    "main.js": "/Portfolio/static/js/main.8d15c86a.js",
+    "static/media/bg.jpg": "/Portfolio/static/media/bg.fff5588090bbcde4e51e.jpg",
+    "static/media/uk-flag.svg": "/Portfolio/static/media/uk-flag.8411a74a2d01099b9cd827dcba16a600.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/it-flag.svg": "/Portfolio/static/media/it-flag.e357b1f2542f61c2b38b72dbe843d8f4.svg",
+    "main.fc04b32d.css.map": "/Portfolio/static/css/main.fc04b32d.css.map",
+    "main.8d15c86a.js.map": "/Portfolio/static/js/main.8d15c86a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc04b32d.css",
+    "static/js/main.8d15c86a.js"
+  ]
+}
