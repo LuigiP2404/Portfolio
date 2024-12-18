@@ -133,8 +133,8 @@ function Projects() {
         }
     };
 
-    const toggleDropdown = (e: React.MouseEvent) => {
-        e.stopPropagation();
+    const toggleDropdown = (e?: React.MouseEvent) => {
+        if (e) e.stopPropagation();
         setShowDropdown((prev: boolean) => !prev);
     }
 
@@ -158,6 +158,7 @@ function Projects() {
                 });
             }
             setFilteredProjects(sortedArray);
+            toggleDropdown();
         });
     };
     
@@ -178,20 +179,6 @@ function Projects() {
         }, 1200);
         setDebounceTimer(timer);
     };
-
-    const resetSearch = () => {
-        applyTransition(() => {
-            setSearchValue('');
-            if (debounceTimer) {
-                setDebounceTimer(null);
-            }
-            if (activeSorting) {
-                sortProjects(activeSorting)
-            } else {
-                setFilteredProjects(allProjects);
-            }
-        });
-    }
 
     const resetFilters = () => {
         applyTransition(() => {
@@ -230,7 +217,7 @@ function Projects() {
                                 <IoSearchOutline />
                             </span>}
                             <input type="text" placeholder="Search..." value={searchValue} onChange={((e) => search(e.target.value))}></input>
-                            {searchValue.length > 0 && <a onClick={() => resetSearch()}><RxCross2 /></a>}
+                            {searchValue.length > 0 && <a onClick={() => resetFilters()}><RxCross2 /></a>}
                         </div>
                         <p className="projects-filters-box-sortText">
                             {t('Sort')}
