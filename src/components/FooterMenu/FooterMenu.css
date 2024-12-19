@@ -7,7 +7,7 @@
 @media all and (max-width: 768px) {
   .footermenu {
     height: auto;
-    margin-block: 30px 50px;
+    margin-block: 75px 50px;
   }
 }
 .footermenu-menu {

@@ -9,6 +9,11 @@ import { IoLogoJavascript, IoLogoVue, IoSearchOutline } from "react-icons/io5";
 import { SiMysql, SiTypescript } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
 import { DiJqueryLogo } from "react-icons/di";
+import calculator from '../../assets/calculator.png'
+import todo from '../../assets/todo.png'
+import blackjack from '../../assets/blackjack.png'
+import portfolio from '../../assets/portfolio.png'
+import monster from '../../assets/monster.png'
 
 import './Projects.css'
 
@@ -19,7 +24,9 @@ interface ProjectInterface {
     creationDateMonth: string,
     creationDate: string,
     imgSrc: string,
-    languages: LanguagesType[]
+    languages: LanguagesType[],
+    githubUrl: string,
+    websiteUrl?: string,
 }
 
 interface LanguagesType {
@@ -41,11 +48,12 @@ function Projects() {
     const allProjects: ProjectInterface[] = [
         {
             name: 'Portfolio',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at erat quam. Curabitur faucibus sit amet massa id fringilla. Curabitur diam leo, venenatis vitae sollicitudin.',
+            description: 'The website you are looking at right now, developed in ReactJS and TypeScript.',
             creationDateMonth: 'Dec',
             creationDateYear: '2024',
             creationDate: '01/12/2024',
-            imgSrc: '',
+            githubUrl: 'https://github.com/LuigiP2404/Portfolio/',
+            imgSrc: portfolio,
             languages: [
                 {
                     icon: FaHtml5,
@@ -67,11 +75,13 @@ function Projects() {
         },
         {
             name: 'Monster vs Player',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at erat quam. Curabitur faucibus sit amet massa id fringilla. Curabitur diam leo, venenatis vitae sollicitudin.',
-            creationDateMonth: 'Feb',
-            creationDateYear: '2022',
-            creationDate: '01/02/2022',
-            imgSrc: '',
+            description: 'Developed in VueJS, Monster vs Player is my first small project with this framework, it is basically a fight between a player and a monster.',
+            creationDateMonth: 'Aug',
+            creationDateYear: '2021',
+            creationDate: '01/08/2021',
+            githubUrl: 'https://github.com/LuigiP2404/Monster-vs-Player',
+            websiteUrl: 'https://luigip2404.github.io/Monster-vs-Player/',
+            imgSrc: monster,
             languages: [
                 {
                     icon: FaHtml5,
@@ -93,11 +103,69 @@ function Projects() {
         },
         {
             name: 'To-Do List',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at erat quam. Curabitur faucibus sit amet massa id fringilla. Curabitur diam leo, venenatis vitae sollicitudin.',
-            creationDateMonth: 'Mar',
+            description: 'Developed in VueJS, To-Do List is my second small project with this framework, I mainly built this to properly understand the usage of arrays in Vue rendering.',
+            creationDateMonth: 'Feb',
+            creationDateYear: '2022',
+            creationDate: '01/02/2022',
+            imgSrc: todo,
+            githubUrl: 'https://github.com/LuigiP2404/ToDoList',
+            websiteUrl: 'https://luigip2404.github.io/ToDoList/',
+            languages: [
+                {
+                    icon: FaHtml5,
+                    iconDesc: 'HTML'
+                },
+                {
+                    icon: FaSass,
+                    iconDesc: 'SASS'
+                },
+                {
+                    icon: SiTypescript,
+                    iconDesc: 'TypeScript'
+                },
+                {
+                    icon: FaReact,
+                    iconDesc: 'React'
+                }
+            ]
+        },
+        {
+            name: 'Calculator',
+            description: 'Developed in VueJS, Calculator is a simple project with a basic calculator which can do simple arithmetic operations.',
+            creationDateMonth: 'Sep',
+            creationDateYear: '2021',
+            creationDate: '01/09/2021',
+            imgSrc: calculator,
+            githubUrl: 'https://github.com/LuigiP2404/Calculator',
+            websiteUrl: 'https://luigip2404.github.io/Calculator/',
+            languages: [
+                {
+                    icon: FaHtml5,
+                    iconDesc: 'HTML'
+                },
+                {
+                    icon: FaSass,
+                    iconDesc: 'SASS'
+                },
+                {
+                    icon: SiTypescript,
+                    iconDesc: 'TypeScript'
+                },
+                {
+                    icon: FaReact,
+                    iconDesc: 'React'
+                }
+            ]
+        },
+        {
+            name: 'BlackJack',
+            description: 'Developed in ReactJS and TypeScript, BlackJack is my first small project with this framework. It is a BlackJack game with the dealer and just 1 player.',
+            creationDateMonth: 'Jun',
             creationDateYear: '2023',
-            creationDate: '01/03/2024',
-            imgSrc: '',
+            creationDate: '01/06/2023',
+            imgSrc: blackjack,
+            githubUrl: 'https://github.com/LuigiP2404/BlackJack',
+            websiteUrl: 'https://luigip2404.github.io/BlackJack/',
             languages: [
                 {
                     icon: FaHtml5,
@@ -245,6 +313,8 @@ function Projects() {
                                     creationDateMonth={x.creationDateMonth}
                                     creationDateYear={x.creationDateYear}
                                     languages={x.languages}
+                                    githubUrl={x.githubUrl}
+                                    websiteUrl={x.websiteUrl}
                                 />
                             </div>
                         ))
