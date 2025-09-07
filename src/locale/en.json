@@ -59,6 +59,12 @@
       "1+ Year": "1+ Year",
       "Mar 2021 - Jun 2021": "Mar 2021 - Jun 2021",
       "Sep 2021 - Aug 2023": "Sep 2021 - Aug 2023",
-      "Oct 2023 - Current": "Oct 2023 - Current"
+      "Oct 2023 - Current": "Oct 2023 - Current",
+      "The website you are looking at right now, developed in ReactJS and TypeScript.": "The website you are looking at right now, developed in ReactJS and TypeScript.",
+      "Developed in VueJS, Monster vs Player is my first small project with this framework, it is basically a fight between a player and a monster.": "Developed in VueJS, Monster vs Player is my first small project with this framework, it is basically a fight between a player and a monster.",
+      "Developed in VueJS, To-Do List is my second small project with this framework, I mainly built this to properly understand the usage of arrays in Vue rendering.": "Developed in VueJS, To-Do List is my second small project with this framework, I mainly built this to properly understand the usage of arrays in Vue rendering.",
+      "Developed in VueJS, Calculator is a simple project with a basic calculator which can do simple arithmetic operations.": "Developed in VueJS, Calculator is a simple project with a basic calculator which can do simple arithmetic operations.",
+      "Developed in ReactJS and TypeScript, BlackJack is my first small project with this framework. It is a BlackJack game with the dealer and just 1 player.": "Developed in ReactJS and TypeScript, BlackJack is my first small project with this framework. It is a BlackJack game with the dealer and just 1 player.",
+      "Developed in ReactJS and TypeScript, this webapp allows you to see the price graphs of the main cryptocurrencies.": "Developed in ReactJS and TypeScript, this webapp allows you to see the price graphs of the main cryptocurrencies."
     }
   }

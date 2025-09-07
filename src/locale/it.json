@@ -45,7 +45,7 @@
       "Dec": "Dic",
       "Simply the website you are looking at right now!": "Semplicemente il sito che stai guardando adesso!",
       "Visit": "Visita",
-      "Get In Touch": "Mettiti in",
+      "Get In Touch": "Mettiamoci in",
       "Contact 2": "Contatto",
       "Sort": "Ordina",
       "Most Recent": "Più recente",
@@ -59,6 +59,12 @@
       "1+ Year": "1+ Anno",
       "Mar 2021 - Jun 2021": "Mar 2021 - Giu 2021",
       "Sep 2021 - Aug 2023": "Set 2021 - Ago 2023",
-      "Oct 2023 - Current": "Ott 2023 - Attuale"
+      "Oct 2023 - Current": "Ott 2023 - Attuale",
+      "The website you are looking at right now, developed in ReactJS and TypeScript.": "Il sito che stai guardando in questo momento, sviluppato in ReactJS e TypeScript.",
+      "Developed in VueJS, Monster vs Player is my first small project with this framework, it is basically a fight between a player and a monster.": "Sviluppato in VueJS, Monster vs Player è il mio primo piccolo progetto con questo framework, è fondamentalmente una lotta tra un giocatore e un mostro.",
+      "Developed in VueJS, To-Do List is my second small project with this framework, I mainly built this to properly understand the usage of arrays in Vue rendering.": "Sviluppato in VueJS, To-Do List è il mio secondo piccolo progetto con questo framework, l'ho creato principalmente per comprendere correttamente l'uso degli array nel rendering di Vue.",
+      "Developed in VueJS, Calculator is a simple project with a basic calculator which can do simple arithmetic operations.": "Sviluppato in VueJS, Calculator è un progetto semplice con una calcolatrice che può eseguire operazioni aritmetiche semplici.",
+      "Developed in ReactJS and TypeScript, BlackJack is my first small project with this framework. It is a BlackJack game with the dealer and just 1 player.": "Sviluppato in ReactJS e TypeScript, BlackJack è il mio primo piccolo progetto con questo framework. È un gioco di BlackJack con il dealer e un solo giocatore.",
+      "Developed in ReactJS and TypeScript, this webapp allows you to see the price graphs of the main cryptocurrencies.": "Sviluppato in ReactJS e TypeScript, questa webapp ti permette di vedere i grafici dei prezzi delle principali criptovalute."
     }
   }

@@ -21,7 +21,7 @@ function About() {
                             {t('Experience')}
                         </span>
                         <span className="about-box-text">
-                            {t('3+ Years')}
+                            {t('4+ Years')}
                         </span>
                         <span className="about-box-text">
                             {t('Front End Development')}

@@ -14,6 +14,7 @@ import todo from '../../assets/todo.png'
 import blackjack from '../../assets/blackjack.png'
 import portfolio from '../../assets/portfolio.png'
 import monster from '../../assets/monster.png'
+import crypto from '../../assets/crypto.png'
 
 import './Projects.css'
 
@@ -166,6 +167,34 @@ function Projects() {
             imgSrc: blackjack,
             githubUrl: 'https://github.com/LuigiP2404/BlackJack',
             websiteUrl: 'https://luigip2404.github.io/BlackJack/',
+            languages: [
+                {
+                    icon: FaHtml5,
+                    iconDesc: 'HTML'
+                },
+                {
+                    icon: FaSass,
+                    iconDesc: 'SASS'
+                },
+                {
+                    icon: SiTypescript,
+                    iconDesc: 'TypeScript'
+                },
+                {
+                    icon: FaReact,
+                    iconDesc: 'React'
+                }
+            ]
+        },
+        {
+            name: 'Crypto Graphs',
+            description: 'Developed in ReactJS and TypeScript, this webapp allows you to see the price graphs of the main cryptocurrencies.',
+            creationDateMonth: 'Jun',
+            creationDateYear: '2023',
+            creationDate: '01/06/2023',
+            imgSrc: crypto,
+            githubUrl: 'https://github.com/LuigiP2404/Crypto-Graph',
+            websiteUrl: 'https://luigip2404.github.io/Crypto-Graph/',
             languages: [
                 {
                     icon: FaHtml5,
