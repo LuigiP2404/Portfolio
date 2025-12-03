@@ -43,7 +43,7 @@ function About() {
                     </div>
                 </div>
                 <div className="about-paragraph">
-                    {t(`I am a highly motivated and adaptable Front-End Developer with over three years of professional experience in building and optimizing web applications. I have worked on both small-scale projects and large international collaborations, enhancing my technical expertise and teamwork skills. My technical stack includes HTML, CSS, SASS, JavaScript, TypeScript, VueJS, ReactJS (a few months experience here) and Agile methodologies, among others. I thrive in dynamic environments, enjoy solving complex problems, and am committed to continuous learning. Currently seeking opportunities across Europe to expand my professional experience, improve my English prociency, and embrace new cultural challenges.`)}
+                    {t(`I am a highly motivated and adaptable Front-End Developer with over four years of professional experience in building and optimizing web applications. I have worked on both small-scale projects and large international collaborations, enhancing my technical expertise and teamwork skills. My technical stack includes HTML, CSS, SASS, JavaScript, TypeScript, VueJS, ReactJS (a few months experience here) and Agile methodologies, among others. I thrive in dynamic environments, enjoy solving complex problems, and am committed to continuous learning. Currently seeking opportunities across Europe to expand my professional experience, improve my English prociency, and embrace new cultural challenges.`)}
                 </div>
             </div>
         </div>

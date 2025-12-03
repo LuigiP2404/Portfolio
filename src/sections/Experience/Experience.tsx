@@ -107,7 +107,7 @@ function Experience() {
         {
             company: 'Accenture',
             title: 'Front End Developer',
-            textDuration: '1+ Year',
+            textDuration: '2+ Years',
             dateDuration: 'Oct 2023 - Current',
             description: [t('Front-End Development of an eCommerce with Magento integration (GraphQL)'), t("I've worked with an international team, with the use of English language as primary language, and an Agile methodology")],
             icons: [
